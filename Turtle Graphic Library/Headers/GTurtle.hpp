@@ -29,6 +29,8 @@ public:
 	void AddGreen(Sint16);
 	void AddBlue(Sint16);
 
+	void LookAt(float x, float y);
+
 	void Step();
 
 private:

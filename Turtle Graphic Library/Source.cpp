@@ -1,8 +1,8 @@
 #include <SDL.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include"TurtleMagic.hpp"
-#include "GTurtle.hpp"
+#include"./Headers/TurtleMagic.hpp"
+#include"./Headers/GTurtle.hpp"
 
 
 SDL_bool Init(void);

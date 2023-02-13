@@ -18,21 +18,21 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GTurtle.cpp">
+    <ClCompile Include="Source Code\GTurtle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TurtleMagic.cpp">
+    <ClCompile Include="Source Code\TurtleMagic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="global.hpp">
+    <ClInclude Include="Headers\global.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GTurtle.hpp">
+    <ClInclude Include="Headers\GTurtle.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TurtleMagic.hpp">
+    <ClInclude Include="Headers\TurtleMagic.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

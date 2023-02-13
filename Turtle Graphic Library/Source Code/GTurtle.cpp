@@ -1,9 +1,10 @@
-#include"GTurtle.hpp"
+#include"../Headers/GTurtle.hpp"
 #include<math.h>
 #include<algorithm>
 
 static constexpr float ToRadian = (static_cast<float>(M_PI) / 180.0f);
 static constexpr float ToDegree = (180.0f / static_cast<float>(M_PI));
+static constexpr float HALF_PI = static_cast<float>(M_PI) / 2.0f;
 
 
 GTurtle::GTurtle()
@@ -118,4 +119,24 @@ void GTurtle::AddBlue(Sint16 b)
 {
 	Color.b += static_cast<Uint8>(b);
 };
+
+void GTurtle::LookAt(float x, float y)
+{
+	float dx = x - xPos;
+	float dy = y - yPos;
+
+	if (dx == 0)
+	{
+		if (dy > 0.0f) angle = HALF_PI;
+		else if (dy < 0.0f) angle = -HALF_PI;
+	}
+	else
+	{
+		angle = atanf(dy / dx);
+		if (dx < 0.0f) angle += static_cast<float>(M_PI); 
+		// atanf result will be in the domain ]-PI/2 , PI/2[ and for me in this context -60 and 300 are not the same 
+		// I want negative to represent orientation.
+	}
+}
+
 

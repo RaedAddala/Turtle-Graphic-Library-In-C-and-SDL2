@@ -1,4 +1,4 @@
-#include"TurtleMagic.hpp"
+#include"../Headers/TurtleMagic.hpp"
 extern GTurtle* Turtle;
 
 void TurtleDoMagic()
