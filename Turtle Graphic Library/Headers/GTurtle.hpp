@@ -30,7 +30,9 @@ public:
 	void AddBlue(Sint16);
 
 	void LookAt(float x, float y);
-
+	float GetLength(void);
+	float GetPosX(void);
+	float GetPosY(void);
 	void Step();
 
 private:

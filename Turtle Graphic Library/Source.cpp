@@ -46,7 +46,7 @@ SDL_bool Init(void)
 		return SDL_FALSE;
 	}
 	if ( (Window = SDL_CreateWindow("Turtle Graphics",SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED ,
-					WINDOW_WIDTH, WINDOW_HEIGHT,SDL_WINDOW_FULLSCREEN))
+					WINDOW_WIDTH, WINDOW_HEIGHT,0))
 		== nullptr)
 	{
 		fprintf(stderr, "ERROR : WINDOW CREATION FAILED - %s", SDL_GetError());
@@ -77,9 +77,6 @@ void TurtleGraphicsInit()
 	// Background WHITE
 	SDL_SetRenderDrawColor(Renderer, 255, 255, 255, 255);
 	SDL_RenderClear(Renderer);
-	Turtle->DrawModeOn();
-	Turtle->setLength(75);
-	Turtle->SetDrawColor({ 100,25,50,255 });
 	TurtleDoMagic();
 	// SHOW TO WINDOW
 	SDL_RenderPresent(Renderer);

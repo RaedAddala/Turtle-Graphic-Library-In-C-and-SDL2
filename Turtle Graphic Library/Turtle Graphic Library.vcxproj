@@ -172,12 +172,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source Code\GTurtle.cpp" />
+    <ClCompile Include="Source Code\SnowFlakeFractal.cpp" />
     <ClCompile Include="Source Code\TurtleMagic.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\global.hpp" />
     <ClInclude Include="Headers\GTurtle.hpp" />
+    <ClInclude Include="Headers\SnowFlakeFractal.hpp" />
     <ClInclude Include="Headers\TurtleMagic.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -138,5 +138,21 @@ void GTurtle::LookAt(float x, float y)
 		// I want negative to represent orientation.
 	}
 }
+float  GTurtle::GetLength(void)
+{
+	return length;
+}
+
+float  GTurtle::GetPosX(void)
+{
+	return xPos;
+}
+
+float  GTurtle::GetPosY(void)
+{
+	return yPos;
+}
+
+
 
 
