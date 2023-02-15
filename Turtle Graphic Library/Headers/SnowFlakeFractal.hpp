@@ -25,5 +25,11 @@ public :
 
 class SnowFlakeFractal {
 public:
+	SnowFlakeFractal();
+	SnowFlakeFractal(std::vector<std::pair<float, float>> Vertecies);
+	void AddVertex(float xPos, float yPos);
+	bool GetEdge(float& x1, float& y1, float& x2, float& y2, int index);
+	int nbEdges(void);
 private:
+	std::vector<std::pair<float, float>> Vertecies;
 };
